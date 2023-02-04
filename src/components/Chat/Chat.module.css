@@ -1,0 +1,76 @@
+.Chat{
+    background: #f3f6fb;
+    margin: 20px;
+    border-radius: 10px;
+    flex: 2 !important;
+    /* min-height: 100vh; */
+    /* position: relative; */
+}
+
+.Chat .messageList {
+    overflow: auto;
+    height: calc(100vh - 125px);
+}
+
+.singleMessage{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    
+}
+.singleMessage> img {
+    margin: 0px 10px;
+    border-radius: 50%;
+    max-width: 60px;
+}
+.singleMessage> .message {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px #e9ecf2;
+}
+
+
+.singleMessage.fromMessage{
+    flex-direction: row-reverse;
+}
+
+.singleMessage.fromMessage > .message {
+    background: #1a233c;
+    color: white;
+}
+
+.sendMessage{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    /* position: absolute;
+    bottom: 0;
+    width: -webkit-fill-available; */
+}
+.sendMessage input{
+    line-height: 2.4rem;
+    font-size: 20px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    flex: 1;
+}
+.sendMessage input:focus{
+    outline: none;
+ 
+}
+.sendMessage input::placeholder {
+    font-size: 15px;
+}
+.sendMessage button{
+    min-height: 41px;
+    min-width: 4.8rem;
+    margin-left: 15px;
+    border: none;
+    fill: #fff;
+    color: #fff;
+    background: #1976d2;
+    border-color: #1976d2;
+    border-radius: 10px;
+    cursor: pointer;
+}

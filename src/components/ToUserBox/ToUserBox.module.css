@@ -1,0 +1,48 @@
+.ToUserBox{
+    background: #f5f7fb;
+    border: 1px solid #e0e8f2;
+    border-radius: 10px;
+    padding: 30px;
+    display:  flex;
+    flex-direction: column;
+    
+}
+.ToUserBox> div{
+    margin-bottom: 10px;
+}
+.ToUserBox .circle{
+    text-align: center;
+}
+.ToUserBox .archive{
+    text-align: center;
+    background-color: #ffffff;
+    color: #113dff;
+    border: 1px solid #113dff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: max-content;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.ToUserBox .archive:hover{
+    color: #ffffff;
+    background-color: #113dff;  
+}
+.ToUserBox .circle:before{
+    content: attr(title);
+    display:inline-block;
+    font-size:1.5em;
+    width:5rem;
+    height:5rem;
+    line-height:5rem;
+    text-align:center;
+    border-radius:50%;
+    background: #c6daff;
+    vertical-align:middle;
+    margin-right:1em;
+    color:#3d5874;
+}
+
+.email{
+    color:#36516e
+}

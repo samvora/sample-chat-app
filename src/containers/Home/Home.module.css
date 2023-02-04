@@ -1,0 +1,9 @@
+.Home{
+  display: flex;
+  width: 100%;
+}
+
+.Home > div{
+  flex: 1;
+}
+

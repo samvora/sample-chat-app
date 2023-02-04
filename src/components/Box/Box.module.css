@@ -1,0 +1,77 @@
+.Box{
+    background: #f5f7fb;
+    border: 1px solid #e0e8f2;
+    border-radius: 10px;
+    padding: 25px;
+    display:  flex;
+    margin: 20px 0px;
+    width: 100px;
+    display: flex;
+}
+
+.icon{
+    width: fit-content;
+    margin-right: 10px;
+    border-radius: 50%;
+    width: 30px;
+    min-width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    font-size: 25px;
+}
+
+.detail{
+    display: flex;
+    flex-direction: column;
+}
+
+.Box  .text{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.Box.blue {
+    background: #d9e4fd;
+}
+.Box.blue  .icon{
+    background: #b2c7ff;
+    color: #0e48ff;
+}
+.Box.blue  .text{
+    color: #0e48ff;
+}
+
+.Box.green {
+    background: #e3f6f3;
+}
+.Box.green  .icon{
+    background: #c8f0ea;
+    color: #22bb9c;
+}
+.Box.green  .text{
+
+    color: #22bb9c;
+}
+
+.Box.pink {
+    background: #f7f3ff;
+}
+.Box.pink  .icon{
+    background: #d9d3ff;
+    color: #705dc5;
+}
+.Box.pink  .text{
+    color: #705dc5;
+}
+
+.Box.red {
+    background: #fff1e8;
+}
+.Box.red  .icon{
+    background: #fee1d3;
+    color: #fb5422;
+}
+.Box.red  .text{
+    color: #fb5422;
+}
