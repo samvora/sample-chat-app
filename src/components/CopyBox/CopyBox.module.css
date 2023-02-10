@@ -1,0 +1,20 @@
+.CopyBox{
+    background: #f5f7fb;
+    border: 1px solid #e0e8f2;
+    border-radius: 10px;
+    padding: 20px;
+    display:  flex;
+    flex-direction: column;
+    margin: 20px 0px;
+    text-align: center;
+        
+  
+}
+
+.copyLink{
+    margin-top: 20px;
+}
+
+.copyLink button{
+    padding: 10px 30px;
+}

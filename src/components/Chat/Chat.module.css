@@ -3,6 +3,7 @@
     margin: 20px;
     border-radius: 10px;
     flex: 2 !important;
+    max-height: 100vh;
     /* min-height: 100vh; */
     /* position: relative; */
 }
@@ -18,32 +19,50 @@
     padding: 10px;
     
 }
-.singleMessage> img {
+.singleMessage img {
     margin: 0px 10px;
     border-radius: 50%;
     max-width: 60px;
 }
-.singleMessage> .message {
+.singleMessage .message {
     background: white;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 3px 3px #e9ecf2;
 }
+.singleMessage .time {
+    font-size: 10px;
+    margin-top: 8px;
+    color: #929aac;
+
+    position: absolute;
+    bottom: -15px;
+    width: max-content;
+}
+
 
 
 .singleMessage.fromMessage{
     flex-direction: row-reverse;
 }
 
-.singleMessage.fromMessage > .message {
+.singleMessage.fromMessage .message {
     background: #1a233c;
     color: white;
+}
+
+.singleMessage.fromMessage  .time {
+    right: 0;
 }
 
 .sendMessage{
     display: flex;
     align-items: center;
     margin: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    color: #8890a4;
     /* position: absolute;
     bottom: 0;
     width: -webkit-fill-available; */
@@ -62,15 +81,46 @@
 .sendMessage input::placeholder {
     font-size: 15px;
 }
-.sendMessage button{
-    min-height: 41px;
-    min-width: 4.8rem;
+
+.messageContainer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.online{
+    position: absolute;
+    right: 13px;
+    
+    bottom: 13px;
+    border: 1px solid white;
+    max-height: 5px;
+    max-width: 5px;
+    background: #8890a4;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+}
+.online.active {
+    background: #22bb9d;
+}
+.emojiContainer{
+    position: relative;
+}
+.emojiContainer div:nth-child(1){
     margin-left: 15px;
-    border: none;
-    fill: #fff;
-    color: #fff;
-    background: #1976d2;
-    border-color: #1976d2;
-    border-radius: 10px;
     cursor: pointer;
 }
+.emojiContainer div:nth-child(2){
+    position: absolute;
+    right: -10px;
+    bottom: 35px;
+}
+
+.fileUpload label{
+    display: inline-block;
+    padding: 0.5rem;
+    cursor: pointer;
+    transform: rotate(75deg);
+    font-size: 23px;
+  }

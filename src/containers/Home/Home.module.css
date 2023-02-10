@@ -7,3 +7,9 @@
   flex: 1;
 }
 
+
+@media only screen and (max-width: 720px) {
+  .Home {
+    flex-direction: column;
+  }
+}

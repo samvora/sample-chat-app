@@ -12,21 +12,16 @@
 }
 .ToUserBox .circle{
     text-align: center;
+    text-transform: capitalize;
 }
 .ToUserBox .archive{
     text-align: center;
-    background-color: #ffffff;
-    color: #113dff;
-    border: 1px solid #113dff;
-    border-radius: 10px;
-    padding: 10px 20px;
-    width: max-content;
-    margin: 0 auto;
-    cursor: pointer;
+    margin: 10px auto;
 }
-.ToUserBox .archive:hover{
-    color: #ffffff;
-    background-color: #113dff;  
+.ToUserBox .archive button{
+    text-align: center;
+
+    padding: 10px 20px;
 }
 .ToUserBox .circle:before{
     content: attr(title);

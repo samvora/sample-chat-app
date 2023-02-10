@@ -1,0 +1,25 @@
+
+.Button button{
+    min-height: 41px;
+    min-width: 4.8rem;
+    margin-left: 15px;
+    border: none;
+    fill: #fff;
+    color: #fff;
+    background: #0f4cff;
+    border: 1px solid #0f4cff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.Button.inverse button, .Button.regular button:hover{
+    background: #fff;
+    fill: #0f4cff;
+    color: #0f4cff;
+}
+
+.Button.inverse button:hover{
+    background: #0f4cff;
+    fill: #fff;
+    color: #fff;
+}

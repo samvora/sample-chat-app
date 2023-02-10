@@ -1,15 +1,19 @@
 import React, { useRef, useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { getAuthUserCard } from "../../selectors";
+import { toggleOnlineStatus } from "../../actions";
 import SwitchComponent from "../SwitchComponent/SwitchComponent";
 import css from "./AuthUserCard.module.css";
 
 const AuthUserCard = () => {
   const user = useSelector(getAuthUserCard());
-  const [isChecked, toggle] = useState();
   const ref = useRef();
   const meunuRef = useRef();
+  const dispatch = useDispatch();
   const [isMenuActive, toggleActiveMenu] = useState();
+  const toggleOnline = () => {
+    dispatch(toggleOnlineStatus());
+  }
   const toggleMenu = () => {
     const el = ref.current;
     console.log(el.offsetTop, el.offsetLeft);
@@ -36,8 +40,10 @@ const AuthUserCard = () => {
           <div>item 1</div>
           <div>item 2</div>
         </div>
-    
-      <SwitchComponent isChecked={isChecked} toggle={toggle} />
+      <div style={{display:'flex',alignItems: 'center'}}>
+        <SwitchComponent isChecked={user.isOnline} toggle={toggleOnline} />
+        <div style={{marginLeft:'10px'}}>{user.isOnline?'Active':'In Active'}</div>
+      </div>
     </div>
   );
 };
